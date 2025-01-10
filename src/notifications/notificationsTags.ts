@@ -6,3 +6,9 @@ export function tagUserInfoCreate() {
     user_name: "Mario Dias",
   });
 }
+
+export function tagCartUpdate(items_count: string) {
+  OneSignal.User.addTags({
+    cart_items_count: items_count,
+  });
+}
